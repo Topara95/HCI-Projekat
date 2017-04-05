@@ -1,0 +1,141 @@
+﻿<Window x:Class="Projekat_3._2DW.DodajProzor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekat_3._2DW"
+        xmlns:val="clr-namespace:ValidacijaAjde"
+        mc:Ignorable="d"
+        Title="DodajProzor" Height="570" Width="300">
+    <StackPanel Background="Beige">
+        <TextBlock FontWeight="ExtraBold" Margin="40 0 0 0" Text="OBRAZAC ZA DODAVANJE SPOMENIKA"/>
+        <Grid Margin="10 0 10 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Margin="0 10 0 0" Text="Oznaka spomenika"/>
+            <TextBox Grid.Row="1" Padding="2" Margin="0 0 0 0"/>
+        </Grid>
+
+        <Grid Margin="10 0 10 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Margin="0 0 0 0" Text="Naziv spomenika"/>
+            <TextBox Grid.Row="1" Padding="2" Margin="0 0 0 0"/>
+        </Grid>
+
+
+        <Grid Margin="10 0 10 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Margin="0 0 0 0" Text="Opis spomenika"/>
+            <TextBox Grid.Row="1" Padding="2" Margin="0 0 0 0"/>
+        </Grid>
+
+        <Grid Margin="10 0 10 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Margin="0 0 0 0" Text="Tip spomenika"/>
+            <ComboBox SelectedIndex="1" Grid.Row="1" Padding="2" Margin="0 0 0 0">
+                <ComboBoxItem Content="Istorijski"/>
+                <ComboBoxItem Content="Prirodni"/>
+            </ComboBox>
+        </Grid>
+
+        <Grid Margin="10 0 10 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Margin="0 0 0 0" Text="Klima"/>
+            <ComboBox SelectedIndex="0" Grid.Row="1" Padding="2" Margin="0 0 0 0">
+                <ComboBoxItem Content="Polarna"/>
+                <ComboBoxItem Content="Kontinentalna"/>
+                <ComboBoxItem Content="Umereno - kontinentalna"/>
+                <ComboBoxItem Content="Pustinjska"/>
+                <ComboBoxItem Content="Subtropska"/>
+                <ComboBoxItem Content="Tropska"/>
+            </ComboBox>
+        </Grid>
+
+        <Grid Margin="10 0 10 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Margin="0 0 0 0" Text="Ikonica"/>
+            <Button Click="Button_Click" Content="Izaberite putanju do ikonice" Grid.Row="1" Padding="2" Margin="0 0 0 0">
+            </Button>
+        </Grid>
+        <CheckBox Margin="10 10 0 0" Content="Ekoloski ugrozen"/>
+        <CheckBox Margin="10 0 0 0" Content="Staniste ugrozenih vrsta"/>
+        <CheckBox Margin="10 0 0 0" Content="Nalazi se u naseljenom regionu"/>
+
+
+        <Grid Margin="10 0 10 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Margin="0 10 0 0" Text="Turisticki status"/>
+            <ComboBox SelectedIndex="0" Grid.Row="1" Padding="2" Margin="0 0 0 0">
+                <ComboBoxItem Content="Eksploatisan"/>
+                <ComboBoxItem Content="Dostupan"/>
+                <ComboBoxItem Content="Nedostupan"/>
+            </ComboBox>
+        </Grid>
+
+        <Grid Margin="10 0 10 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Margin="0 10 0 0" Text="Godisnji prihod od turizma u dolarima ($)"/>
+            <TextBox Margin="0 30 0 10" x:Name="textBox">
+                <TextBox.Text>
+                    <Binding Path="Cena" UpdateSourceTrigger="PropertyChanged" Converter="{val:DoubleToTextConverter}">
+                        <Binding.ValidationRules>
+                            <val:StringToDoubleValidationRule ValidationStep="RawProposedValue"/>
+                            <val:MinMaxValidationRule ValidationStep="ConvertedProposedValue" Min="0" Max="5"/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+                <Validation.ErrorTemplate>
+                    <ControlTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <AdornedElementPlaceholder Grid.Row="0" x:Name="textBox"/>
+                            <TextBlock Grid.Row="1" Text="{Binding [0].ErrorContent}" Foreground="Red" HorizontalAlignment="Left"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Validation.ErrorTemplate>
+            </TextBox>
+        </Grid>
+
+        <Label Margin="8 0 0 0" Content="Izaberite datum pronalska"/>
+        <DatePicker SelectedDate="01/01/1900" Margin="10 0 0 0"></DatePicker>
+
+        <Grid Margin="10 25 10 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Margin="0 0 10 0" Grid.Column="0" Content="Sacuvaj"/>
+            <Button Margin="10 0 0 0" Grid.Column="1" Content="Odustani"/>
+        </Grid>
+
+    </StackPanel>
+    
+    
+</Window>

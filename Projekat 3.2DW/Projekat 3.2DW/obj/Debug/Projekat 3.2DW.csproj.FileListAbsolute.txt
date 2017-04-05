@@ -1,0 +1,23 @@
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\bin\Debug\Projekat 3.2DW.exe.config
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\bin\Debug\Projekat 3.2DW.exe
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\bin\Debug\Projekat 3.2DW.pdb
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\Projekat 3.2DW.csprojResolveAssemblyReference.cache
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\MainWindow.g.cs
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\App.g.cs
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\Projekat 3.2DW_MarkupCompile.cache
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\Projekat 3.2DW_MarkupCompile.lref
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\MainWindow.baml
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\Projekat 3.2DW.g.resources
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\Projekat_3._2DW.Properties.Resources.resources
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\Projekat 3.2DW.csproj.GenerateResource.Cache
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\Projekat 3.2DW.exe
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\Projekat 3.2DW.pdb
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\Window1.g.cs
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\Window1.baml
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\DodajProzor.g.cs
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\DodajProzor.baml
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\EtiketaProzor.g.cs
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\EtiketaProzor.baml
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\TipProzor.g.cs
+C:\Users\computer\Desktop\rni\HCI\3.2DW\Projekat 3.2DW\Projekat 3.2DW\obj\Debug\TipProzor.baml
